@@ -1,14 +1,12 @@
-altura = float(input("Introduce tu altura: "))
-peso = float(input("Introduce tu peso: "))
-imc = peso / (altura**2)
-print(f"Tu imc es: {imc}")
-if imc<18.5:
-    print("Tienes bajo peso")
-elif imc>=18.5 and imc<24.9:
-    print("Tienes un buen peso")
-elif imc>=24.9 and imc<29.9:
-    print("Tienes sobrepeso")
-else:
-    print("Tienes obesidad")
+numCorrecto = False
+while not numCorrecto:
+    num = int(input("Introduce num de 1 a 10:"))
+    if num>=1 and num<=10:
+        numCorrecto = True
 
+# vs
 
+while True:
+    num = int(input("Introduce num de 1 a 10:"))
+    if num>=1 and num<=10:
+        break
