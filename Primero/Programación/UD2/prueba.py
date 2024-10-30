@@ -1,12 +1,9 @@
-numCorrecto = False
-while not numCorrecto:
-    num = int(input("Introduce num de 1 a 10:"))
-    if num>=1 and num<=10:
-        numCorrecto = True
+texto = "En un lugar de la Mancha de cuyo nombre no me quiero acordar"
+nEspacios = 0
 
-# vs
+for caracter in texto:
+    if caracter == " ":
+        nEspacios = nEspacios + 1
 
-while True:
-    num = int(input("Introduce num de 1 a 10:"))
-    if num>=1 and num<=10:
-        break
+nPalabras = nEspacios + 1
+print(f"La frase tiene {nPalabras} palabras")
