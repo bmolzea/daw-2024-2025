@@ -1,9 +1,10 @@
-texto = "En un lugar de la Mancha de cuyo nombre no me quiero acordar"
-nEspacios = 0
+import math
+a = 0.1
+b = 0.4
+c = 0.5
+d = 0.6
+e = 0.99
 
-for caracter in texto:
-    if caracter == " ":
-        nEspacios = nEspacios + 1
-
-nPalabras = nEspacios + 1
-print(f"La frase tiene {nPalabras} palabras")
+print(f"{c} redondeado es: {round(c)}")
+print(f"{c} ceil es: {math.ceil(c)}")
+print(f"{c} floor es: {math.floor(c)}")
