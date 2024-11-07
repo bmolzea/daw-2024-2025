@@ -1,10 +1,17 @@
-import math
-a = 0.1
-b = 0.4
-c = 0.5
-d = 0.6
-e = 0.99
+def imc(peso: float, altura: float) -> str:
+    imc = peso/(altura*altura)
+    if imc < 18.5:
+        resultado = "Peso bajo"
+    elif imc >= 18.5 and imc< 24.9:
+        resultado = "Peso óptimo"
+    elif imc >= 24.9 and imc < 30:
+        resultado = "Sobrepeso"
+    else:
+        resultado = "Obesidad"
+   
+    return resultado
 
-print(f"{c} redondeado es: {round(c)}")
-print(f"{c} ceil es: {math.ceil(c)}")
-print(f"{c} floor es: {math.floor(c)}")
+p = float(input("Inserta tu peso: "))
+a = float(input("Inserta tu altura: "))
+
+print(imc(p, a))
