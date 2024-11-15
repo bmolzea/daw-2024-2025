@@ -7,4 +7,4 @@ def contarVocales(palabra: str) -> int:
 
 palabra = input("Inserta una palabra: ")
 nVocales = contarVocales(palabra)
-print(f"La palabra {palabra} tiene {nVocales} letras")
+print(f"La palabra {palabra} tiene {nVocales} vocales")

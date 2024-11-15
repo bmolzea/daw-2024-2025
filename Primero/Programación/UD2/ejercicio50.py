@@ -52,3 +52,8 @@ while puntosHumano<3 and puntosBot<3:
     ronda = ronda + 1
     print(f"Humano: {puntosHumano} puntos")
     print(f"Bot: {puntosBot} puntos")
+
+if puntosHumano == 3:
+    print("Eres la ostia has ganado")
+else:
+    print("Has perdido")

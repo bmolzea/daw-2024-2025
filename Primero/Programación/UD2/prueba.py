@@ -1,17 +1,9 @@
-def imc(peso: float, altura: float) -> str:
-    imc = peso/(altura*altura)
-    if imc < 18.5:
-        resultado = "Peso bajo"
-    elif imc >= 18.5 and imc< 24.9:
-        resultado = "Peso óptimo"
-    elif imc >= 24.9 and imc < 30:
-        resultado = "Sobrepeso"
-    else:
-        resultado = "Obesidad"
-   
-    return resultado
+import geometria
+import random
 
-p = float(input("Inserta tu peso: "))
-a = float(input("Inserta tu altura: "))
+while True:
+    num = random.random()
+    print(num)
+    if num == 0.5:
+        break
 
-print(imc(p, a))
