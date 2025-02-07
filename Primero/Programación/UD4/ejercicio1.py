@@ -3,3 +3,4 @@ andalucia = ["Almería", "Cádiz", "Granada", "Málaga", "Jaén", "Córdoba", "H
 for provincia in andalucia:
     if provincia[0] == "C":
         print(provincia)
+        
