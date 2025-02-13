@@ -1,4 +1,3 @@
-equipos = ["Real Madrid", "FC Barcelona", "Villareal"]
-# Insertamos el Atlético de Madrid entre Real Madrid y FC Barcelona
-equipos.insert(1, "Atlético de Madrid")
-print(equipos)
+a = [1, 23, 4, 4, 7, 3, 5]
+a.reverse()
+print(a.index(4))
