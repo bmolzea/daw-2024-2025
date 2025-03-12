@@ -13,4 +13,11 @@ planetas = [
     Planeta("Plutón", 1.303e22, 1.1883e6, datetime(1930, 2, 18), [["Caronte", 6.057e5, 1.586e21]])
 ]
 
-print(planetas[4].lunas[0])
+densidades = [planeta.get_densidad() for planeta in planetas]
+
+mayor_densidad = max(densidades)
+planeta_mayor_densidad = [planeta for planeta in planetas if planeta.get_densidad() == mayor_densidad][0]
+print(planeta_mayor_densidad)
+
+
+
