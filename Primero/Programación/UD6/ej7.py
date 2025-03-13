@@ -13,11 +13,52 @@ planetas = [
     Planeta("Plutón", 1.303e22, 1.1883e6, datetime(1930, 2, 18), [["Caronte", 6.057e5, 1.586e21]])
 ]
 
+# Crea una lista con las densidades de todos los planetas
 densidades = [planeta.get_densidad() for planeta in planetas]
 
+# Obtén el planeta cuya densidad sea mayor
 mayor_densidad = max(densidades)
 planeta_mayor_densidad = [planeta for planeta in planetas if planeta.get_densidad() == mayor_densidad][0]
 print(planeta_mayor_densidad)
+
+# Encuentra las lunas que sean más grandes que la Luna
+# Paso 1, encuentro el radio de la Luna
+radio_luna = 0
+for planeta in planetas:
+    for luna in planeta.lunas:
+        if luna[0] == "Luna":
+            radio_luna = luna[1]
+            break
+
+# Paso 2, encontramos las lunas más grandes que la Luna
+lunas_grandes = []
+for planeta in planetas:
+    for luna in planeta.lunas:
+        if luna[1] > radio_luna:
+            lunas_grandes.append(luna[0])
+
+print(f"Las lunas más grandes que la Luna son: {lunas_grandes}")
+
+
+# Encuentra la luna más pequeña
+radios_luna = []
+for planeta in planetas:
+    for luna in planeta.lunas:
+        radios_luna.append(luna[1])
+
+radio_min = min(radios_luna)
+
+romper = False
+for planeta in planetas:
+    for luna in planeta.lunas:
+        if luna[1] == radio_min:
+            print(f"La luna más peque es: {luna[0]}")
+            romper = True
+            break
+    if romper:
+        break
+
+
 
 
 
