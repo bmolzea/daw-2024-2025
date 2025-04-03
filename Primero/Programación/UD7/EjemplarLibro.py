@@ -13,7 +13,7 @@ class EjemplarLibro(EdicionLibro):
         self.prestado = prestado
         self.fecha_inicio_prestamo = fecha_inicio_prestamo
         self.fecha_fin_prestamo = fecha_fin_prestamo
-        dni_prestamo_actual = dni_prestamo_actual
+        self.dni_prestamo_actual = dni_prestamo_actual
 
     def estado_str(self) -> str:
         estado = "Desconocido"

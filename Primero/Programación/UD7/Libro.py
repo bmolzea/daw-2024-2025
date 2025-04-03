@@ -19,7 +19,6 @@ class Libro:
            f"Número de palabras: {self.n_palabras}"
        )
 
-
    def __eq__(self, other) -> bool:
        if isinstance(other, Libro):
            return self.titulo == other.titulo and self.autores == other.autores
@@ -27,16 +26,14 @@ class Libro:
 
 
    def __lt__(self, other) -> bool:
-       return self.n_palabras < other.n_palabras
-
+        return self.n_palabras < other.n_palabras
 
    def __le__(self, other) -> bool:
        return self.n_palabras <= other.n_palabras
 
 
    def __gt__(self, other) -> bool:
-       return self.n_palabras >= other.n_palabras
-
+       return self.n_palabras > other.n_palabras
 
    def __ge__(self, other) -> bool:
        return self.n_palabras >= other.n_palabras
