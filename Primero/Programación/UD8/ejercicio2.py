@@ -7,11 +7,11 @@ with open("quijote.txt", "r", encoding="utf-8") as f:
             if palabras[0].lower() == "don":
                 contador += 1
 
-print(f"{contador} líneas empiezan con Don (o don)")
+print(f"{contador} líneas empiezan con la palabra Don (o don)")
 
 # Con readliness()
 with open("quijote.txt", "r", encoding="utf-8") as f:
     lineas = f.readlines()
     contador = len([l for l in lineas if len(l.split())>0 and l.split()[0].lower() == "don"])
 
-print(f"{contador} líneas empiezan con Don (o don)")
+print(f"{contador} líneas empiezan con la plabra Don (o don)")

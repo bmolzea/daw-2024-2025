@@ -67,6 +67,7 @@ elif config.idioma == "en":
     i_lang = 1
 
 
+print(textos[i_lang][0])
 while vidas > 0:
     cuenta = crear_cuenta(config.operaciones, config.minimo, config.maximo)
     resultado_correcto = cuenta[0]

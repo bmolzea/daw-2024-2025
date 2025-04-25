@@ -14,7 +14,7 @@ def leer_pelicula(atributos: list[str]) -> list[Pelicula]:
     fecha = datetime(int(fecha[2]), int(fecha[1]), int(fecha[0]))
     return Pelicula(
         atributos[0],
-        atributos[1], 
+        int(atributos[1]), 
         int(atributos[2]), 
         atributos[3].split("-"),
         fecha
