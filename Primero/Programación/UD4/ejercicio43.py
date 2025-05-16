@@ -4,7 +4,6 @@ Crea una lista con palabras. Crea una segunda lista que contenga las mismas pala
 """
 
 palabras = ["abejorro", "perro", "gato", "abaco"]
-
 palabras_mayus = [palabra.upper() for palabra in palabras]
 
 print(palabras_mayus)
