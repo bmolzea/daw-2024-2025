@@ -1,0 +1,61 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título */
+.container h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Campo de entrada */
+input[type="text"] {
+  padding: 0.6rem;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+button {
+  display: block;
+  margin: 0.5rem auto 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Saludo */
+#saludo {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+}
